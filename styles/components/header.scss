@@ -1,0 +1,130 @@
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 99;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+
+    // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    .logo {
+        width: 120px;
+        /* position: absolute;
+
+        top: 50%;
+        margin-left: 50%;
+        transform: translateY(-50%);
+        transform: translateX(-50%); */
+
+        img {
+            width: 100%;
+        }
+    }
+    .openMenu,
+    .search {
+        width: 20px;
+        cursor: pointer;
+    }
+    .openMenu {
+        margin-left: 20px;
+    }
+    .closeMenu {
+        color: rgb(0, 0, 0);
+        //background-color: black;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        //top: ;
+        //bottom: -10px;
+        left: 15px;
+        border: 1px solid gainsboro;
+        cursor: pointer;
+        border-radius: 50px;
+    }
+    .search {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        .logo {
+            width: 150px;
+        }
+        .openMenu,
+        .search {
+            width: 20px;
+            cursor: pointer;
+        }
+        .openMenu {
+            margin-left: 30px;
+        }
+        .search {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        .logo {
+            width: 200px;
+        }
+        .openMenu,
+        .search {
+            width: 25px;
+            cursor: pointer;
+        }
+        .openMenu {
+            margin-left: 30px;
+        }
+        .search {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .header {
+        height: 95px;
+        .logo {
+            width: 270px;
+        }
+        .openMenu,
+        .search {
+            width: 35px;
+            cursor: pointer;
+        }
+        .openMenu {
+            margin-left: 30px;
+        }
+        .search {
+            margin-right: 30px;
+        }
+    }
+}
+@media screen and (min-width: 2560px) {
+    .header {
+        height: 130px;
+        .logo {
+            width: 300px;
+        }
+        .openMenu,
+        .search {
+            width: 45px;
+            cursor: pointer;
+        }
+        .openMenu {
+            margin-left: 30px;
+        }
+        .search {
+            margin-right: 30px;
+        }
+    }
+}

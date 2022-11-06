@@ -1,0 +1,72 @@
+.navigation {
+    height: 70px;
+    width: 100%;
+    //background-color: #008037;
+    //background-color: rgb(243, 240, 240);
+
+    position: relative;
+
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gainsboro;
+    //box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            //margin: 10px;
+        }
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+}
+/* .tess {
+    margin-top: -70px;
+} */
+@media screen and (min-width: 768px) {
+    .navigation {
+        height: 70px;
+        width: 100%;
+        margin-bottom: 5px;
+        //background-color: #008037;
+
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .navigation {
+        height: 130px;
+        a {
+            font-size: 2rem;
+            margin: 50px;
+        }
+        .closeMenu {
+            background-color: black;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: -15px;
+            right: 10px;
+            border-radius: 2px;
+        }
+    }
+}
