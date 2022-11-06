@@ -1,0 +1,562 @@
+.main-content {
+    width: 80%;
+    height: 585px;
+    margin-left: 20px;
+    .title {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 10px 0px;
+        h1 {
+            width: 250px;
+        }
+        .hr {
+            width: 100%;
+            height: 1px;
+            background-color: lighten(#1d1c1c, 5);
+        }
+    }
+
+    .container-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+}
+
+.map {
+    width: 60%;
+    height: 100%;
+    //background-color: $mySecondaryBlack;
+
+    .Algerie_svg__st0,
+    .Algerie_svg__st1 {
+        fill: #181717;
+        stroke: #dfc58f;
+        stroke-width: 0.5;
+        stroke-linecap: round;
+    }
+    .Algerie_svg__st1 {
+        stroke-width: 0.4989;
+    }
+    .Algerie_svg__st2 {
+        font-family: "DejaVuSansCondensed";
+    }
+    .Algerie_svg__st3 {
+        font-size: 13.3333px;
+    }
+    .Algerie_svg__st4 {
+        font-size: 10.6667px;
+    }
+
+    svg {
+        height: 100%;
+
+        margin: 0 auto;
+        path:hover {
+            fill: #a00322;
+            cursor: pointer;
+        }
+    }
+    .active-tabs {
+        fill: #a00322;
+    }
+}
+
+.map-content {
+    height: 100%;
+    width: 40%;
+    margin-left: 10px;
+    background-color: $mySecondaryBlack;
+    overflow-y: scroll;
+    position: relative;
+    .content {
+        display: none;
+        position: relative;
+    }
+    .active-content {
+        display: block;
+    }
+}
+.map-content::-webkit-scrollbar {
+    width: 10px;
+}
+.map-content::-webkit-scrollbar-thumb {
+    background-color: darken($myBlack, 20);
+    border-radius: 3px;
+}
+.map-content::-webkit-scrollbar-thumb:hover {
+    background-color: lighten($myBlack, 10);
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #181717b5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.img-wilaya {
+    width: 100%;
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+/* .description_wilaya {
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    .spine {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            width: 50px;
+        }
+    }
+    p {
+        margin-left: 10px;
+    }
+    .card {
+        background-color: white;
+        width: 206px;
+        height: 160px;
+        margin: 5px;
+        border-radius: 7px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+            background-color: #00000030;
+            .label {
+                background-color: #181717;
+                color: white;
+                padding: 5px 7px 5px 7px;
+                border-radius: 5px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+            h5 {
+                position: absolute;
+                bottom: 10px;
+                left: 5px;
+                color: white;
+            }
+        }
+    }
+} */
+.description_wilaya {
+    display: flex;
+    flex-wrap: wrap;
+    width: 99%;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    .spine {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            width: 50px;
+        }
+    }
+    p {
+        margin-left: 10px;
+    }
+    .card {
+        background-color: white;
+        width: 206px;
+        height: 160px;
+        margin: 5px;
+        border-radius: 7px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+            background-color: #00000030;
+            .label {
+                background-color: #181717;
+                color: white;
+                padding: 5px 7px 5px 7px;
+                border-radius: 5px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+            h5 {
+                position: absolute;
+                bottom: 10px;
+                left: 5px;
+                color: white;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .main-content {
+        width: 100%;
+        height: 1300px;
+        margin-left: 0px;
+        .title {
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 10px 0px;
+            h1 {
+                width: 220px;
+                white-space: nowrap;
+                padding-right: 10px;
+                margin-left: 15px;
+            }
+            .hr {
+                width: 100%;
+                height: 1px;
+                background-color: lighten(#1d1c1c, 5);
+            }
+        }
+        margin: 0 auto;
+        .container-content {
+            width: 100%;
+            height: 100%;
+
+            flex-direction: column;
+        }
+    }
+    .map {
+        height: 70%;
+        margin: 0 auto;
+        svg {
+            width: 90%;
+        }
+    }
+    .map-content {
+        height: 100%;
+        width: 100%;
+
+        margin: 20px 0px 50px 0px;
+        .content {
+            display: none;
+        }
+        .active-content {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .main-content {
+        width: 95%;
+        height: 1300px;
+        margin-left: 0px;
+        .title {
+            display: flex;
+            align-items: center;
+            margin: 10px 0px 10px 0px;
+            h1 {
+                width: 220px;
+                white-space: nowrap;
+                padding-right: 10px;
+                margin-left: 15px;
+                font-size: 1.1rem;
+            }
+            .hr {
+                width: 100%;
+                height: 1px;
+                background-color: lighten(#1d1c1c, 5);
+            }
+        }
+        margin: 0 auto;
+        .container-content {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            flex-direction: column;
+        }
+    }
+    .map {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -150px;
+        //background-color: #a00322;
+        svg {
+            width: 100%;
+        }
+    }
+    .map-content {
+        height: 100%;
+        width: 100%;
+        margin: -150px 0px 50px 0px;
+        background-color: $mySecondaryBlack;
+    }
+    .description_wilaya {
+        display: flex;
+        flex-wrap: wrap;
+        width: 99%;
+
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+        .spine {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            img {
+                width: 50px;
+            }
+        }
+        p {
+            margin-left: 10px;
+        }
+        .card {
+            background-color: white;
+            width: 47%;
+            height: 160px;
+            margin: 5px;
+            border-radius: 7px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 7px;
+            }
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 7px;
+                background-color: #00000030;
+                .label {
+                    background-color: #181717;
+                    color: white;
+                    padding: 5px 7px 5px 7px;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+                h5 {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 5px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 361px) {
+    .description_wilaya {
+        display: flex;
+        flex-wrap: wrap;
+        width: 99%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+
+        .card {
+            background-color: white;
+            width: 46.5% !important;
+            height: 160px;
+            margin: 5px;
+            border-radius: 7px;
+            position: relative;
+        }
+    }
+}
+@media screen and (max-width: 376px) {
+    .map-content {
+        height: 100%;
+        width: 100%;
+        margin: -180px 0px 50px 0px;
+        background-color: $mySecondaryBlack;
+
+        .content {
+            display: none;
+        }
+        .active-content {
+            display: block;
+        }
+    }
+    .description_wilaya {
+        display: flex;
+        flex-wrap: wrap;
+        width: 99%;
+
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+        .spine {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            img {
+                width: 50px;
+            }
+        }
+        p {
+            margin-left: 10px;
+        }
+        .card {
+            background-color: white;
+            width: 160px;
+            height: 160px;
+            margin: 5px;
+            border-radius: 7px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 7px;
+            }
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 7px;
+                background-color: #00000030;
+                .label {
+                    background-color: #181717;
+                    color: white;
+                    padding: 5px 7px 5px 7px;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+                h5 {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 5px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .map {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -220px;
+        //background-color: #a00322;
+        svg {
+            width: 100%;
+        }
+    }
+    .map-content {
+        height: 100%;
+        width: 100%;
+        margin: -220px 0px 50px 0px;
+        background-color: $mySecondaryBlack;
+
+        .content {
+            display: none;
+        }
+        .active-content {
+            display: block;
+        }
+    }
+    .description_wilaya {
+        display: flex;
+        flex-wrap: wrap;
+        width: 99%;
+
+        margin: 0 auto;
+        margin-top: 20px;
+        position: relative;
+        .spine {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            img {
+                width: 50px;
+            }
+        }
+        p {
+            margin-left: 10px;
+        }
+        .card {
+            background-color: white;
+            width: 100%;
+            height: 180px;
+            margin: 5px;
+            border-radius: 7px;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 7px;
+            }
+
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 7px;
+                background-color: #00000030;
+                .label {
+                    background-color: #181717;
+                    color: white;
+                    padding: 5px 7px 5px 7px;
+                    border-radius: 5px;
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                }
+                h5 {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 5px;
+                    color: white;
+                }
+            }
+        }
+    }
+}

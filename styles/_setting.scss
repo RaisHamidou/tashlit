@@ -1,0 +1,33 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap");
+$fontFamily: "Roboto", sans-serif;
+$fontPlayFair: "Playfair Display", serif;
+//Color
+$myGold: #dfc58f;
+$myGray: #edeff3;
+$myBlack: #181717;
+$mySecondaryRed: #611313;
+$mySecondaryBlack: #181717;
+$myGraySecondary: #202020;
+$myRed: #a00322;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #1d1c1c;
+    color: #fff;
+    font-family: $fontFamily;
+}
+h1,
+h3 {
+    color: $myGold;
+    font-family: $fontPlayFair;
+}
+
+a {
+    text-decoration: none;
+}

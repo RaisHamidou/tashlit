@@ -1,19 +1,82 @@
 .hero {
-    background-color: gainsboro;
+    position: relative;
     width: 100%;
     height: 500px;
-    position: relative;
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-
     .overlay {
         position: absolute;
         bottom: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+        background: linear-gradient(180deg, rgba(29, 28, 28, 0) 0%, #1d1c1c 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            font-size: 1.7rem;
+            color: #ffff;
+            font-family: $fontPlayFair;
+        }
+        .btn {
+            font-size: 1.2rem;
+            border: 3.5px solid #ffff;
+            font-family: $fontPlayFair;
+            border-radius: 50px;
+            /* padding-left: 10px;
+            padding-right: 10px; */
+            padding: 5px 20px 5px 20px;
+            margin-top: 25px;
+            &:hover {
+                box-shadow: inset 0px 0px 0px 1px #fff;
+                transition: 202ms ease;
+            }
+
+            a {
+                margin: 15px;
+                text-decoration: none;
+                color: #ffff;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .hero {
+        height: 350px;
+        .overlay {
+            p {
+                text-align: center;
+                font-size: 1.2rem;
+            }
+            .btn {
+                font-size: 0.8rem;
+                border: 2px solid;
+            }
+        }
+    }
+}
+@media screen and (max-width: 429px) {
+    .hero {
+        z-index: 1;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .hero {
+        height: 300px;
+        .overlay {
+            p {
+                text-align: center;
+                font-size: 0.9rem;
+            }
+            .btn {
+                font-size: 0.8rem;
+                border: 2px solid;
+            }
+        }
     }
 }

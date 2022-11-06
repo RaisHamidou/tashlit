@@ -1,0 +1,342 @@
+.last-article {
+    width: 98%;
+    margin: auto;
+    .title {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        h1 {
+            font-size: 1.7rem;
+            font-weight: bold;
+            white-space: none;
+            width: 200px;
+
+            /* margin-left: 15px; */
+        }
+        .hr {
+            width: 95%;
+            height: 1px;
+            background-color: lighten(#1d1c1c, 5);
+            margin-left: 5px;
+        }
+    }
+}
+.container-card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .Skelet {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .isloading {
+            background: $mySecondaryBlack;
+            position: relative;
+            overflow: hidden;
+            width: 287.5px;
+            height: 230px;
+            margin: 5px;
+            position: relative;
+            border-radius: 7px;
+
+            .label {
+                background-color: #312f2f;
+                width: 70px;
+                height: 25px;
+                margin: 10px;
+                display: block;
+                border-radius: 3px;
+                position: absolute;
+                overflow: hidden;
+            }
+
+            .title {
+                position: absolute;
+                bottom: 20px;
+                margin-left: 10px;
+                background-color: #312f2f;
+                display: block;
+                width: 90%;
+                height: 30px;
+                color: #161515;
+                border-radius: 3px;
+                overflow: hidden;
+            }
+        }
+
+        /* Shine */
+
+        .title:after {
+            content: "";
+            width: 100%;
+            height: 220px;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            border-radius: 3px;
+            //background: #1b1a1a;
+            background: lighten(#181717, 1);
+
+            // background-size: 200% 100%;
+            animation: 2.9s shine linear infinite;
+            //transition: ease;
+        }
+        .label:after {
+            content: "";
+            width: 100%;
+            height: 220px;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+
+            //background: #1b1a1a;
+            background: lighten(#181717, 1);
+            border-radius: 3px;
+            // background-size: 200% 100%;
+            animation: 2.9s shine linear infinite;
+            //transition: ease;
+        }
+        /* animation */
+
+        @keyframes shine {
+            50% {
+                opacity: 0;
+            }
+        }
+    }
+    .card {
+        background: $mySecondaryBlack;
+        width: 287.5px;
+        height: 230px;
+        margin: 5px;
+        position: relative;
+        border-radius: 7px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 7px;
+        }
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.37);
+        color: #ffff;
+        border-radius: 7px;
+
+        .label {
+            background-color: $mySecondaryBlack;
+            width: 70px;
+            padding: 5px 0px 5px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            float: left;
+            color: #ffff;
+            margin: 10px;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            margin: 10px;
+            //padding: 10px 10px 30px 10px;
+            a {
+                color: $myGold;
+            }
+        }
+    }
+    /* .Skelet {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .label {
+            background-color: #312f2f;
+            width: 70px;
+            height: 25px;
+            margin: 10px;
+            display: block;
+            border-radius: 3px;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .title {
+            position: absolute;
+            bottom: 20px;
+            margin-left: 10px;
+            background-color: #312f2f;
+            display: block;
+            width: 90%;
+            height: 30px;
+            color: #161515;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .title:after {
+            content: "";
+            width: 100%;
+            height: 220px;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            border-radius: 3px;
+
+            background: lighten(#181717, 1);
+
+            animation: 2.9s shine linear infinite;
+        }
+        .label:after {
+            content: "";
+            width: 100%;
+            height: 220px;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            background: lighten(#181717, 1);
+            border-radius: 3px;
+
+            animation: 2.9s shine linear infinite;
+        }
+
+        @keyframes shine {
+            50% {
+                opacity: 0;
+            }
+        }
+    } */
+}
+
+@media screen and (max-width: 1024px) {
+    .last-article {
+        width: 98%;
+        margin: auto;
+        .title {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            h1 {
+                font-size: 1.7rem;
+                font-weight: bold;
+
+                width: 220px;
+                white-space: nowrap;
+                padding-right: 5px;
+                margin-left: 15px;
+            }
+            .hr {
+                width: 95%;
+                height: 1px;
+                background-color: lighten(#1d1c1c, 5);
+                margin-left: 5px;
+            }
+        }
+    }
+    .container-card {
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            width: 190px;
+            height: 190px;
+        }
+        .overlay {
+            p {
+                font-size: 0.9rem;
+
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+/* @media screen and (max-width: 376px) {
+    .container-card {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #501010;
+
+        .card {
+            width: 320px !important;
+            height: 220px;
+        }
+        .overlay {
+            p {
+                font-size: 0.9rem;
+
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+} */
+@media screen and (max-width: 408px) {
+    .last-article {
+        width: 98%;
+        margin: auto;
+        .title {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            h1 {
+                font-size: 1.1rem;
+                font-weight: bold;
+
+                width: 220px;
+                white-space: nowrap;
+                padding-right: 5px;
+                margin-left: 15px;
+            }
+            .hr {
+                width: 95%;
+                height: 1px;
+                background-color: lighten(#1d1c1c, 5);
+                margin-left: 5px;
+            }
+        }
+    }
+    .container-card {
+        .card {
+            width: 300px;
+            height: 220px;
+        }
+    }
+}
+@media screen and (max-width: 377px) {
+    .container-card {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .overlay {
+            p {
+                font-size: 0.9rem;
+
+                a {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
